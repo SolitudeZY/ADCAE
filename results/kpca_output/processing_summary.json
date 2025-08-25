@@ -1,0 +1,104 @@
+{
+  "total_processing_time_seconds": 299.373831987381,
+  "timestamp": "2025-07-27 18:17:42",
+  "datasets_processed": [
+    "USTC",
+    "CTU"
+  ],
+  "individual_results": {
+    "USTC": {
+      "dataset_name": "USTC",
+      "model_type": "KPCA",
+      "timestamp": "2025-07-27 18:15:33",
+      "processing_time_seconds": 167.12910318374634,
+      "total_samples": 221274,
+      "input_features": 1024,
+      "encoded_features": 24,
+      "kernel": "rbf",
+      "n_components": 24,
+      "category_counts": {
+        "Miuref-ALL": 13214,
+        "Normal-ALL": 60000,
+        "Tinba-ALL": 6568,
+        "Htbot-ALL": 5960,
+        "Neris-ALL": 31681,
+        "Geodo-ALL": 36321,
+        "Cridex-ALL": 16384,
+        "Zeus-ALL": 10588,
+        "Virut-ALL": 32868,
+        "Shifu-ALL": 7690
+      },
+      "train_samples": 199153,
+      "test_samples": 22121,
+      "train_feature_variance": 0.012625333853065968,
+      "test_feature_variance": 0.012637206353247166,
+      "compression_ratio": 0.0234375,
+      "explained_variance_ratio": 1.0,
+      "processing_history": {
+        "preprocessing_time": [
+          64.83941054344177,
+          5.5650246143341064
+        ],
+        "fitting_time": [
+          28.7550847530365
+        ],
+        "transform_time": [
+          61.21221899986267,
+          6.674026727676392
+        ]
+      },
+      "total_processing_time_seconds": 171.4798469543457,
+      "fitting_time_seconds": 28.7550847530365
+    },
+    "CTU": {
+      "dataset_name": "CTU",
+      "model_type": "KPCA",
+      "timestamp": "2025-07-27 18:17:42",
+      "processing_time_seconds": 124.52287197113037,
+      "total_samples": 168655,
+      "input_features": 1024,
+      "encoded_features": 24,
+      "kernel": "rbf",
+      "n_components": 24,
+      "category_counts": {
+        "Artemis-ALL": 8644,
+        "Miuref-ALL": 13225,
+        "Normal-ALL": 51029,
+        "Coinminer-ALL": 301,
+        "Tinba-ALL": 44652,
+        "Dridex-ALL": 3067,
+        "Htbot-ALL": 8999,
+        "Zeus-ALL": 2311,
+        "Ursnif-ALL": 24607,
+        "Trickbot-ALL": 11820
+      },
+      "train_samples": 151795,
+      "test_samples": 16860,
+      "train_feature_variance": 0.011628677137196064,
+      "test_feature_variance": 0.011632555164396763,
+      "compression_ratio": 0.0234375,
+      "explained_variance_ratio": 1.0,
+      "processing_history": {
+        "preprocessing_time": [
+          38.32661199569702,
+          6.25641393661499
+        ],
+        "fitting_time": [
+          29.993722677230835
+        ],
+        "transform_time": [
+          44.87695527076721,
+          5.03618049621582
+        ]
+      },
+      "total_processing_time_seconds": 127.82708811759949,
+      "fitting_time_seconds": 29.993722677230835
+    }
+  },
+  "parameters": {
+    "n_components": 24,
+    "kernel": "rbf",
+    "max_files_per_category": null,
+    "file_length": 1024
+  }
+}

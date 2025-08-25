@@ -1,0 +1,69 @@
+{
+  "dataset": "CTU",
+  "timestamp": "20250730_132422",
+  "activation_comparison": [
+    {
+      "dataset": "CTU",
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9138790035587189,
+      "precision": 0.9134691484333045,
+      "recall": 0.9138790035587189,
+      "f1_score": 0.9130412808357419,
+      "training_time": 1583.320550441742,
+      "testing_time": 0.3017709255218506,
+      "data_shape": {
+        "train": [
+          151795,
+          128
+        ],
+        "test": [
+          16860,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "CTU",
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.8082443653618031,
+      "precision": 0.7975527681562311,
+      "recall": 0.8082443653618031,
+      "f1_score": 0.8003668515841693,
+      "training_time": 266.83113145828247,
+      "testing_time": 0.3632667064666748,
+      "data_shape": {
+        "train": [
+          151795,
+          128
+        ],
+        "test": [
+          16860,
+          128
+        ]
+      }
+    }
+  ],
+  "attention_comparison": []
+}

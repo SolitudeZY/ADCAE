@@ -1,0 +1,6 @@
+Dataset,Experiment_Type,Condition,Accuracy,Precision,Recall,F1_Score,Training_Time(s),Test_Time(s)
+CTU,Activation,elu,0.8900,0.8897,0.8900,0.8898,80.2700,0.0082
+CTU,Activation,relu,0.8591,0.8630,0.8591,0.8607,3.0288,0.0079
+CTU,Activation,sigmoid,0.7373,0.7531,0.7373,0.7436,0.2554,0.0086
+CTU,Attention,with_cbam,0.8834,0.8826,0.8834,0.8829,88.5565,0.0066
+CTU,Attention,without_attention,0.8815,0.8820,0.8815,0.8817,1.9987,0.0076

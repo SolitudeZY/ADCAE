@@ -1,0 +1,99 @@
+{
+  "total_processing_time_seconds": 136.8648464679718,
+  "processed_datasets": 2,
+  "timestamp": "2025-07-27 18:24:11",
+  "model_type": "PCA",
+  "parameters": {
+    "n_components": 20,
+    "file_length": 1024,
+    "max_files_per_category": null
+  },
+  "individual_stats": [
+    {
+      "dataset_name": "USTC",
+      "model_type": "PCA",
+      "timestamp": "2025-07-27 18:23:18",
+      "processing_time_seconds": 81.28074359893799,
+      "total_samples": 221274,
+      "input_features": 1024,
+      "encoded_features": 20,
+      "n_components": 20,
+      "category_counts": {
+        "Shifu-ALL": 7690,
+        "Normal-ALL": 60000,
+        "Cridex-ALL": 16384,
+        "Htbot-ALL": 5960,
+        "Zeus-ALL": 10588,
+        "Geodo-ALL": 36321,
+        "Miuref-ALL": 13214,
+        "Neris-ALL": 31681,
+        "Virut-ALL": 32868,
+        "Tinba-ALL": 6568
+      },
+      "train_samples": 199153,
+      "test_samples": 22121,
+      "train_feature_variance": 30.534006118774414,
+      "test_feature_variance": 30.43971824645996,
+      "compression_ratio": 0.01953125,
+      "explained_variance_ratio": 0.6145488023757935,
+      "processing_history": {
+        "preprocessing_time": [
+          69.30420160293579,
+          10.572760105133057
+        ],
+        "fitting_time": [
+          0.9011847972869873
+        ],
+        "transform_time": [
+          0.4095449447631836,
+          0.046154022216796875
+        ]
+      },
+      "total_processing_time_seconds": 84.47275424003601,
+      "fitting_time_seconds": 0.9011847972869873
+    },
+    {
+      "dataset_name": "CTU",
+      "model_type": "PCA",
+      "timestamp": "2025-07-27 18:24:10",
+      "processing_time_seconds": 49.54694890975952,
+      "total_samples": 168655,
+      "input_features": 1024,
+      "encoded_features": 20,
+      "n_components": 20,
+      "category_counts": {
+        "Dridex-ALL": 3067,
+        "Ursnif-ALL": 24607,
+        "Normal-ALL": 51029,
+        "Zeus-ALL": 2311,
+        "Htbot-ALL": 8999,
+        "Miuref-ALL": 13225,
+        "Artemis-ALL": 8644,
+        "Tinba-ALL": 44652,
+        "Trickbot-ALL": 11820,
+        "Coinminer-ALL": 301
+      },
+      "train_samples": 151795,
+      "test_samples": 16860,
+      "train_feature_variance": 25.68071937561035,
+      "test_feature_variance": 25.716602325439453,
+      "compression_ratio": 0.01953125,
+      "explained_variance_ratio": 0.5176596641540527,
+      "processing_history": {
+        "preprocessing_time": [
+          42.15429091453552,
+          6.2835376262664795
+        ],
+        "fitting_time": [
+          0.7320702075958252
+        ],
+        "transform_time": [
+          0.3136265277862549,
+          0.03548097610473633
+        ]
+      },
+      "total_processing_time_seconds": 52.32635259628296,
+      "fitting_time_seconds": 0.7320702075958252
+    }
+  ]
+}

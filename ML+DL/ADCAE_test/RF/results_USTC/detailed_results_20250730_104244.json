@@ -1,0 +1,163 @@
+{
+  "dataset": "USTC",
+  "timestamp": "20250730_104244",
+  "activation_comparison": [
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_ELU",
+      "hyperparameters": {
+        "n_estimators": 160,
+        "max_depth": 22,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.935762397721622,
+      "precision": 0.9411944412301185,
+      "recall": 0.935762397721622,
+      "f1_score": 0.9352393559003707,
+      "training_time": 127.14074754714966,
+      "testing_time": 0.12504792213439941,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "n_estimators": 220,
+        "max_depth": 28,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "log2",
+        "bootstrap": true,
+        "class_weight": "balanced_subsample",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9186293567198589,
+      "precision": 0.9209358047240535,
+      "recall": 0.9186293567198589,
+      "f1_score": 0.9179329437672357,
+      "training_time": 37.86053824424744,
+      "testing_time": 0.17540955543518066,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "n_estimators": 110,
+        "max_depth": 18,
+        "min_samples_split": 3,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.8089598119434022,
+      "precision": 0.8112938984634863,
+      "recall": 0.8089598119434022,
+      "f1_score": 0.8081635204262383,
+      "training_time": 50.657814741134644,
+      "testing_time": 0.10855555534362793,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    }
+  ],
+  "attention_comparison": [
+    {
+      "dataset": "USTC",
+      "experiment_name": "注意力机制_With Cbam",
+      "hyperparameters": {
+        "n_estimators": 190,
+        "max_depth": 32,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9390172234528277,
+      "precision": 0.9415803158943635,
+      "recall": 0.9390172234528277,
+      "f1_score": 0.9387048091646708,
+      "training_time": 160.19687962532043,
+      "testing_time": 0.15508747100830078,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "USTC",
+      "experiment_name": "注意力机制_Without Attention",
+      "hyperparameters": {
+        "n_estimators": 130,
+        "max_depth": 20,
+        "min_samples_split": 2,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "bootstrap": true,
+        "class_weight": "balanced_subsample",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9314226300800145,
+      "precision": 0.9367130867552605,
+      "recall": 0.9314226300800145,
+      "f1_score": 0.9311360514361039,
+      "training_time": 47.25276494026184,
+      "testing_time": 0.11087632179260254,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    }
+  ]
+}

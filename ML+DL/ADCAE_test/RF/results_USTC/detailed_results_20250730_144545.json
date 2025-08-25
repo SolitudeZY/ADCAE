@@ -1,0 +1,69 @@
+{
+  "dataset": "USTC",
+  "timestamp": "20250730_144545",
+  "activation_comparison": [
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9188101803715926,
+      "precision": 0.9205011030029738,
+      "recall": 0.9188101803715926,
+      "f1_score": 0.918198524681492,
+      "training_time": 1711.9725277423859,
+      "testing_time": 0.35001230239868164,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.8293928845893043,
+      "precision": 0.8253867235266483,
+      "recall": 0.8293928845893043,
+      "f1_score": 0.8267341914069398,
+      "training_time": 3165.012361764908,
+      "testing_time": 0.4820556640625,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    }
+  ],
+  "attention_comparison": []
+}

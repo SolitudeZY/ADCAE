@@ -1,0 +1,69 @@
+{
+  "dataset": "USTC",
+  "timestamp": "20250730_123918",
+  "activation_comparison": [
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_ELU",
+      "hyperparameters": {
+        "n_estimators": 160,
+        "max_depth": 22,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.935762397721622,
+      "precision": 0.9411944412301185,
+      "recall": 0.935762397721622,
+      "f1_score": 0.9352393559003707,
+      "training_time": 128.7258415222168,
+      "testing_time": 0.13648319244384766,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "USTC",
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 2,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.830025767370372,
+      "precision": 0.8276671386911092,
+      "recall": 0.830025767370372,
+      "f1_score": 0.8285730449500094,
+      "training_time": 3092.8474016189575,
+      "testing_time": 0.45994997024536133,
+      "data_shape": {
+        "train": [
+          199153,
+          128
+        ],
+        "test": [
+          22121,
+          128
+        ]
+      }
+    }
+  ],
+  "attention_comparison": []
+}

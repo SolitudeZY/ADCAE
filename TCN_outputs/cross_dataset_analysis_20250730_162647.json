@@ -1,0 +1,253 @@
+{
+  "timestamp": "20250730_162647",
+  "datasets_compared": [
+    "CTU",
+    "USTC"
+  ],
+  "cross_dataset_summary": [
+    {
+      "数据集": "CTU",
+      "设备": "cuda",
+      "最佳激活函数": "RELU",
+      "激活_准确率": "0.9758",
+      "激活_精确率": "0.9758",
+      "激活_召回率": "0.9758",
+      "激活_F1分数": "0.9756",
+      "激活_训练时间": "51.12s"
+    },
+    {
+      "数据集": "USTC",
+      "设备": "cuda",
+      "最佳激活函数": "RELU",
+      "激活_准确率": "0.9624",
+      "激活_精确率": "0.9643",
+      "激活_召回率": "0.9624",
+      "激活_F1分数": "0.9623",
+      "激活_训练时间": "54.33s"
+    }
+  ],
+  "detailed_results": {
+    "CTU": {
+      "timestamp": "20250730_162438",
+      "device": "cuda",
+      "activation_comparison": [
+        {
+          "experiment_name": "激活函数_RELU",
+          "hyperparameters": {
+            "num_channels": [
+              64,
+              128,
+              256,
+              128
+            ],
+            "kernel_size": 5,
+            "dropout": 0.25,
+            "seq_len": 20,
+            "epochs": 1,
+            "batch_size": 32,
+            "learning_rate": 0.0001,
+            "patience": 15,
+            "noise_std": 0.05
+          },
+          "accuracy": 0.9758248350329934,
+          "precision": 0.9758110884542875,
+          "recall": 0.9758248350329934,
+          "f1_score": 0.9756189188022957,
+          "training_time": 51.12229084968567,
+          "testing_time": 1.9802327156066895,
+          "data_shape": {
+            "train_seq": [
+              121284,
+              20,
+              129
+            ],
+            "test_seq": [
+              16670,
+              20,
+              129
+            ]
+          },
+          "training_history": {
+            "train_loss": [
+              0.3706375608535058
+            ],
+            "val_loss": [
+              0.0698568981709666
+            ],
+            "train_acc": [
+              86.47142244648923
+            ],
+            "val_acc": [
+              97.81339665578312
+            ]
+          }
+        },
+        {
+          "experiment_name": "激活函数_SIGMOID",
+          "hyperparameters": {
+            "num_channels": [
+              48,
+              96,
+              192,
+              96
+            ],
+            "kernel_size": 5,
+            "dropout": 0.1,
+            "seq_len": 10,
+            "epochs": 1,
+            "batch_size": 128,
+            "learning_rate": 0.001,
+            "patience": 10,
+            "noise_std": 0.02
+          },
+          "accuracy": 0.8550387596899225,
+          "precision": 0.848907961323345,
+          "recall": 0.8550387596899225,
+          "f1_score": 0.8481027071224744,
+          "training_time": 14.112202882766724,
+          "testing_time": 0.5859506130218506,
+          "data_shape": {
+            "train_seq": [
+              121364,
+              10,
+              129
+            ],
+            "test_seq": [
+              16770,
+              10,
+              129
+            ]
+          },
+          "training_history": {
+            "train_loss": [
+              0.8011776021710186
+            ],
+            "val_loss": [
+              0.4211273719047924
+            ],
+            "train_acc": [
+              71.03424409215253
+            ],
+            "val_acc": [
+              85.00049438054118
+            ]
+          }
+        }
+      ],
+      "attention_comparison": []
+    },
+    "USTC": {
+      "timestamp": "20250730_162647",
+      "device": "cuda",
+      "activation_comparison": [
+        {
+          "experiment_name": "激活函数_RELU",
+          "hyperparameters": {
+            "num_channels": [
+              56,
+              112,
+              224,
+              112
+            ],
+            "kernel_size": 6,
+            "dropout": 0.25,
+            "seq_len": 16,
+            "epochs": 1,
+            "batch_size": 40,
+            "learning_rate": 0.0001,
+            "patience": 12,
+            "noise_std": 0.008
+          },
+          "accuracy": 0.9624049883937918,
+          "precision": 0.9642938090455523,
+          "recall": 0.9624049883937918,
+          "f1_score": 0.9622922482218639,
+          "training_time": 54.33086109161377,
+          "testing_time": 2.147493362426758,
+          "data_shape": {
+            "train_seq": [
+              159202,
+              16,
+              129
+            ],
+            "test_seq": [
+              21971,
+              16,
+              129
+            ]
+          },
+          "training_history": {
+            "train_loss": [
+              0.38776941971347595
+            ],
+            "val_loss": [
+              0.12018205612566159
+            ],
+            "train_acc": [
+              85.13523699451012
+            ],
+            "val_acc": [
+              95.897088012864
+            ]
+          }
+        },
+        {
+          "experiment_name": "激活函数_SIGMOID",
+          "hyperparameters": {
+            "num_channels": [
+              64,
+              128,
+              256,
+              128
+            ],
+            "kernel_size": 3,
+            "dropout": 0.45,
+            "seq_len": 8,
+            "epochs": 2,
+            "batch_size": 96,
+            "learning_rate": 0.0025,
+            "patience": 8,
+            "noise_std": 0.025
+          },
+          "accuracy": 0.8798240442610312,
+          "precision": 0.8912030561111177,
+          "recall": 0.8798240442610312,
+          "f1_score": 0.8770172651946273,
+          "training_time": 45.96679425239563,
+          "testing_time": 1.139014720916748,
+          "data_shape": {
+            "train_seq": [
+              159266,
+              8,
+              129
+            ],
+            "test_seq": [
+              22051,
+              8,
+              129
+            ]
+          },
+          "training_history": {
+            "train_loss": [
+              0.7069308283009443,
+              0.4001550141677081
+            ],
+            "val_loss": [
+              0.3974222799740642,
+              0.3429645437073995
+            ],
+            "train_acc": [
+              74.1752790928384,
+              85.12614117262943
+            ],
+            "val_acc": [
+              84.0470150940553,
+              87.32953261169853
+            ]
+          }
+        }
+      ],
+      "attention_comparison": []
+    }
+  }
+}

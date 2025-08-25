@@ -1,0 +1,94 @@
+{
+  "USTC": {
+    "PCA": {
+      "seq_len": 10,
+      "epochs": 1,
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "num_channels": [16, 32, 64],
+      "kernel_size": 3,
+      "dropout": 0.1,
+      "patience": 15,
+      "noise_std": 0.1
+    },
+    "KPCA": {
+      "seq_len": 10,
+      "epochs": 1,
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "num_channels": [32, 64, 128],
+      "kernel_size": 3,
+      "dropout": 0.1,
+      "patience": 20,
+      "noise_std": 0.05
+    },
+    "CAE": {
+      "seq_len": 12,
+      "epochs": 2,
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "num_channels": [64, 128, 256],
+      "kernel_size": 3,
+      "dropout": 0.2,
+      "patience": 18,
+      "noise_std": 0.01
+    },
+    "ADCAE": {
+      "seq_len": 12,
+      "epochs": 4,
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "num_channels": [128, 256, 512],
+      "kernel_size": 3,
+      "dropout": 0.1,
+      "patience": 25,
+      "noise_std": 0.01
+    }
+  },
+  "CTU": {
+    "PCA": {
+      "seq_len": 10,
+      "epochs": 1,
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "num_channels": [32, 64, 128],
+      "kernel_size": 3,
+      "dropout": 0.2,
+      "patience": 12,
+      "noise_std": 0.05
+    },
+    "KPCA": {
+      "seq_len": 15,
+      "epochs": 1,
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "num_channels": [24, 48, 96],
+      "kernel_size": 3,
+      "dropout": 0.1,
+      "patience": 15,
+      "noise_std": 0.0
+    },
+    "CAE": {
+      "seq_len": 12,
+      "epochs": 3,
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "num_channels": [48, 96, 192],
+      "kernel_size": 3,
+      "dropout": 0.35,
+      "patience": 20,
+      "noise_std": 0.15
+    },
+    "ADCAE": {
+      "seq_len": 15,
+      "epochs": 3,
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "num_channels": [96, 192, 384],
+      "kernel_size": 4,
+      "dropout": 0.0,
+      "patience": 25,
+      "noise_std": 0.0
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "performance": {
+    "max_cpu_usage": 1,
+    "enable_caching": true,
+    "batch_processing": true,
+    "memory_limit_gb": 15
+  },
+  "hyperparameters": {
+    "USTC": {
+      "PCA": {
+        "n_estimators": 120,
+        "max_depth": 18,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "KPCA": {
+        "n_estimators": 150,
+        "max_depth": 22,
+        "min_samples_split": 3,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "CAE": {
+        "n_estimators": 2000,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": false,
+        "class_weight": "balanced_subsample",
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "ADCAE": {
+        "n_estimators": 2000,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced_subsample",
+        "random_state": 42,
+        "n_jobs": 12
+      }
+    },
+    "CTU": {
+      "PCA": {
+        "n_estimators": 100,
+        "max_depth": 15,
+        "min_samples_split": 6,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "KPCA": {
+        "n_estimators": 120,
+        "max_depth": 20,
+        "min_samples_split": 5,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "CAE": {
+        "n_estimators": 180,
+        "max_depth": 25,
+        "min_samples_split": 3,
+        "min_samples_leaf": 2,
+        "max_features": "log2",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 12
+      },
+      "ADCAE": {
+        "n_estimators": 2000,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced_subsample",
+        "random_state": 42,
+        "n_jobs": 12
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+Dataset,Experiment_Type,Condition,Accuracy,Precision,Recall,F1_Score,Training_Time(s),Test_Time(s)
+USTC,Activation,elu,0.8882,0.8890,0.8882,0.8885,11.5692,0.0100
+USTC,Activation,relu,0.8874,0.8879,0.8874,0.8854,0.1493,0.0082
+USTC,Activation,sigmoid,0.7743,0.7814,0.7743,0.7771,73.2802,0.0121
+USTC,Attention,with_cbam,0.9013,0.9017,0.9013,0.9014,8.3382,0.0080
+USTC,Attention,without_attention,0.8538,0.8846,0.8538,0.8626,0.1937,0.0097

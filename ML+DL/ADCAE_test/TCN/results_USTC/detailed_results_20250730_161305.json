@@ -1,0 +1,263 @@
+{
+  "timestamp": "20250730_161305",
+  "device": "cuda",
+  "activation_comparison": [
+    {
+      "experiment_name": "激活函数_ELU",
+      "hyperparameters": {
+        "num_channels": [
+          40,
+          80,
+          160,
+          80
+        ],
+        "kernel_size": 4,
+        "dropout": 0.35,
+        "seq_len": 12,
+        "epochs": 1,
+        "batch_size": 48,
+        "learning_rate": 0.0012,
+        "patience": 10,
+        "noise_std": 0.012
+      },
+      "accuracy": 0.9860069965017492,
+      "precision": 0.9866957490055047,
+      "recall": 0.9860069965017492,
+      "f1_score": 0.9859994340203665,
+      "training_time": 42.68566703796387,
+      "testing_time": 1.914754867553711,
+      "data_shape": {
+        "train_seq": [
+          159234,
+          12,
+          129
+        ],
+        "test_seq": [
+          22011,
+          12,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.13595001745617347
+        ],
+        "val_loss": [
+          0.03911869058671971
+        ],
+        "train_acc": [
+          94.74798095884044
+        ],
+        "val_acc": [
+          98.49531512974453
+        ]
+      }
+    },
+    {
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "num_channels": [
+          56,
+          112,
+          224,
+          112
+        ],
+        "kernel_size": 6,
+        "dropout": 0.25,
+        "seq_len": 16,
+        "epochs": 1,
+        "batch_size": 40,
+        "learning_rate": 0.0008,
+        "patience": 12,
+        "noise_std": 0.008
+      },
+      "accuracy": 0.9821127850348186,
+      "precision": 0.9821309347571239,
+      "recall": 0.9821127850348186,
+      "f1_score": 0.9821049590237371,
+      "training_time": 51.5003867149353,
+      "testing_time": 2.4449594020843506,
+      "data_shape": {
+        "train_seq": [
+          159202,
+          16,
+          129
+        ],
+        "test_seq": [
+          21971,
+          16,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.1599605075103982
+        ],
+        "val_loss": [
+          0.05876958080006148
+        ],
+        "train_acc": [
+          94.10685795404581
+        ],
+        "val_acc": [
+          97.80910027386247
+        ]
+      }
+    },
+    {
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "num_channels": [
+          20,
+          40,
+          80,
+          40
+        ],
+        "kernel_size": 3,
+        "dropout": 0.45,
+        "seq_len": 8,
+        "epochs": 1,
+        "batch_size": 96,
+        "learning_rate": 0.0025,
+        "patience": 8,
+        "noise_std": 0.025
+      },
+      "accuracy": 0.8084894109110697,
+      "precision": 0.7820073489753863,
+      "recall": 0.8084894109110697,
+      "f1_score": 0.7799311414547706,
+      "training_time": 20.338179111480713,
+      "testing_time": 0.47837376594543457,
+      "data_shape": {
+        "train_seq": [
+          159266,
+          8,
+          129
+        ],
+        "test_seq": [
+          22051,
+          8,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.9020520742129848
+        ],
+        "val_loss": [
+          0.5558858599289354
+        ],
+        "train_acc": [
+          68.25938995140206
+        ],
+        "val_acc": [
+          79.3630861189944
+        ]
+      }
+    }
+  ],
+  "attention_comparison": [
+    {
+      "experiment_name": "注意力机制_With Cbam",
+      "hyperparameters": {
+        "num_channels": [
+          52,
+          104,
+          208,
+          104
+        ],
+        "kernel_size": 5,
+        "dropout": 0.3,
+        "seq_len": 14,
+        "epochs": 1,
+        "batch_size": 56,
+        "learning_rate": 0.001,
+        "patience": 16,
+        "noise_std": 0.01
+      },
+      "accuracy": 0.9874948842708381,
+      "precision": 0.9878051040763457,
+      "recall": 0.9874948842708381,
+      "f1_score": 0.9874939330905343,
+      "training_time": 27.97192645072937,
+      "testing_time": 1.7832820415496826,
+      "data_shape": {
+        "train_seq": [
+          159218,
+          14,
+          129
+        ],
+        "test_seq": [
+          21991,
+          14,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.12114295625094613
+        ],
+        "val_loss": [
+          0.03524645795926462
+        ],
+        "train_acc": [
+          95.23169490886708
+        ],
+        "val_acc": [
+          98.62580077879663
+        ]
+      }
+    },
+    {
+      "experiment_name": "注意力机制_Without Attention",
+      "hyperparameters": {
+        "num_channels": [
+          28,
+          56,
+          112,
+          56
+        ],
+        "kernel_size": 7,
+        "dropout": 0.4,
+        "seq_len": 10,
+        "epochs": 1,
+        "batch_size": 72,
+        "learning_rate": 0.0018,
+        "patience": 12,
+        "noise_std": 0.018
+      },
+      "accuracy": 0.9798465798193454,
+      "precision": 0.9799133439498796,
+      "recall": 0.9798465798193454,
+      "f1_score": 0.9798485239786874,
+      "training_time": 29.28866147994995,
+      "testing_time": 1.3896207809448242,
+      "data_shape": {
+        "train_seq": [
+          159250,
+          10,
+          129
+        ],
+        "test_seq": [
+          22031,
+          10,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.18316667058878153
+        ],
+        "val_loss": [
+          0.056945852706693854
+        ],
+        "train_acc": [
+          92.79874411302983
+        ],
+        "val_acc": [
+          97.71682616230879
+        ]
+      }
+    }
+  ]
+}

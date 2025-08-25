@@ -1,0 +1,87 @@
+{
+  "total_processing_time_seconds": 165.18472957611084,
+  "timestamp": "2025-07-27 17:44:55",
+  "datasets_processed": [
+    "USTC",
+    "CTU"
+  ],
+  "individual_results": {
+    "USTC": {
+      "dataset_name": "USTC",
+      "timestamp": "2025-07-27 17:43:31",
+      "training_time_seconds": 14.703387022018433,
+      "total_samples": 221274,
+      "input_features": 1024,
+      "encoded_features": 32,
+      "device_used": "cuda",
+      "category_counts": {
+        "Neris-ALL": 31681,
+        "Zeus-ALL": 10588,
+        "Normal-ALL": 60000,
+        "Shifu-ALL": 7690,
+        "Miuref-ALL": 13214,
+        "Geodo-ALL": 36321,
+        "Virut-ALL": 32868,
+        "Tinba-ALL": 6568,
+        "Cridex-ALL": 16384,
+        "Htbot-ALL": 5960
+      },
+      "total_epochs": 1,
+      "avg_epoch_time": 12.576732397079468,
+      "final_metrics": {
+        "epoch": 1,
+        "train_mse": 0.66040653832945,
+        "val_mse": 0.6398750776663805,
+        "train_mae": 0.7022659192602319,
+        "val_mae": 0.6933919225747769,
+        "learning_rate": 0.01
+      },
+      "total_processing_time_seconds": 82.02294540405273,
+      "encoding_time_seconds": 1.8114664554595947,
+      "train_samples": 199153,
+      "test_samples": 22121
+    },
+    "CTU": {
+      "dataset_name": "CTU",
+      "timestamp": "2025-07-27 17:44:54",
+      "training_time_seconds": 10.2859628200531,
+      "total_samples": 168655,
+      "input_features": 1024,
+      "encoded_features": 32,
+      "device_used": "cuda",
+      "category_counts": {
+        "Zeus-ALL": 2311,
+        "Normal-ALL": 51029,
+        "Coinminer-ALL": 301,
+        "Dridex-ALL": 3067,
+        "Artemis-ALL": 8644,
+        "Miuref-ALL": 13225,
+        "Tinba-ALL": 44652,
+        "Ursnif-ALL": 24607,
+        "Trickbot-ALL": 11820,
+        "Htbot-ALL": 8999
+      },
+      "total_epochs": 1,
+      "avg_epoch_time": 9.515671730041504,
+      "final_metrics": {
+        "epoch": 1,
+        "train_mse": 0.7617901578718292,
+        "val_mse": 0.7195836155354476,
+        "train_mae": 0.7367506839327114,
+        "val_mae": 0.7162011681484575,
+        "learning_rate": 0.01
+      },
+      "total_processing_time_seconds": 83.15678119659424,
+      "encoding_time_seconds": 1.3408725261688232,
+      "train_samples": 151795,
+      "test_samples": 16860
+    }
+  },
+  "parameters": {
+    "encoding_dim": 32,
+    "epochs": 1,
+    "batch_size": 128,
+    "learning_rate": 0.01,
+    "file_length": 1024
+  }
+}

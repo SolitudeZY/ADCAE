@@ -1,0 +1,100 @@
+{
+  "dataset": "CTU",
+  "timestamp": "20250730_114527",
+  "activation_comparison": [
+    {
+      "dataset": "CTU",
+      "experiment_name": "激活函数_ELU",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 20,
+        "min_samples_split": 3,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9388493475682088,
+      "precision": 0.9409353574876045,
+      "recall": 0.9388493475682088,
+      "f1_score": 0.9394368046510794,
+      "training_time": 87.37989830970764,
+      "testing_time": 0.10376858711242676,
+      "data_shape": {
+        "train": [
+          151795,
+          128
+        ],
+        "test": [
+          16860,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "CTU",
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "n_estimators": 300,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.9141755634638197,
+      "precision": 0.9137524257077787,
+      "recall": 0.9141755634638197,
+      "f1_score": 0.9133084528352607,
+      "training_time": 944.9662220478058,
+      "testing_time": 0.20417165756225586,
+      "data_shape": {
+        "train": [
+          151795,
+          128
+        ],
+        "test": [
+          16860,
+          128
+        ]
+      }
+    },
+    {
+      "dataset": "CTU",
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "accuracy": 0.8082443653618031,
+      "precision": 0.7975527681562311,
+      "recall": 0.8082443653618031,
+      "f1_score": 0.8003668515841693,
+      "training_time": 265.10726714134216,
+      "testing_time": 0.36480045318603516,
+      "data_shape": {
+        "train": [
+          151795,
+          128
+        ],
+        "test": [
+          16860,
+          128
+        ]
+      }
+    }
+  ],
+  "attention_comparison": []
+}

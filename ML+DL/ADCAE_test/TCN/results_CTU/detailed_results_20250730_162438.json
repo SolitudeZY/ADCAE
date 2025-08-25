@@ -1,0 +1,109 @@
+{
+  "timestamp": "20250730_162438",
+  "device": "cuda",
+  "activation_comparison": [
+    {
+      "experiment_name": "激活函数_RELU",
+      "hyperparameters": {
+        "num_channels": [
+          64,
+          128,
+          256,
+          128
+        ],
+        "kernel_size": 5,
+        "dropout": 0.25,
+        "seq_len": 20,
+        "epochs": 1,
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "patience": 15,
+        "noise_std": 0.05
+      },
+      "accuracy": 0.9758248350329934,
+      "precision": 0.9758110884542875,
+      "recall": 0.9758248350329934,
+      "f1_score": 0.9756189188022957,
+      "training_time": 51.12229084968567,
+      "testing_time": 1.9802327156066895,
+      "data_shape": {
+        "train_seq": [
+          121284,
+          20,
+          129
+        ],
+        "test_seq": [
+          16670,
+          20,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.3706375608535058
+        ],
+        "val_loss": [
+          0.0698568981709666
+        ],
+        "train_acc": [
+          86.47142244648923
+        ],
+        "val_acc": [
+          97.81339665578312
+        ]
+      }
+    },
+    {
+      "experiment_name": "激活函数_SIGMOID",
+      "hyperparameters": {
+        "num_channels": [
+          48,
+          96,
+          192,
+          96
+        ],
+        "kernel_size": 5,
+        "dropout": 0.1,
+        "seq_len": 10,
+        "epochs": 1,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "patience": 10,
+        "noise_std": 0.02
+      },
+      "accuracy": 0.8550387596899225,
+      "precision": 0.848907961323345,
+      "recall": 0.8550387596899225,
+      "f1_score": 0.8481027071224744,
+      "training_time": 14.112202882766724,
+      "testing_time": 0.5859506130218506,
+      "data_shape": {
+        "train_seq": [
+          121364,
+          10,
+          129
+        ],
+        "test_seq": [
+          16770,
+          10,
+          129
+        ]
+      },
+      "training_history": {
+        "train_loss": [
+          0.8011776021710186
+        ],
+        "val_loss": [
+          0.4211273719047924
+        ],
+        "train_acc": [
+          71.03424409215253
+        ],
+        "val_acc": [
+          85.00049438054118
+        ]
+      }
+    }
+  ],
+  "attention_comparison": []
+}
