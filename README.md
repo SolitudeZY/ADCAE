@@ -2,10 +2,9 @@
 # ADCAE: 非对称深度卷积自编码器网络流量异常检测系统
 ## 项目简介
 ADCAE (Asymmetric Deep Convolutional AutoEncoder) 是一个基于深度学习的网络流量异常检测系统。该项目实现了一种创新的非对称深度卷积自编码器架构，结合ELU激活函数和CBAM注意力机制，用于网络流量的特征提取和异常检测。
-
-## 主要特性
+主要处理流程图如下：
 <img width="983" height="875" alt="Fig1" src="https://github.com/user-attachments/assets/14f1c697-090f-4d53-a67e-9d6e848eb4a8" />
-
+## 主要特性
 - 非对称深度卷积自编码器 : 采用非对称的编码器-解码器架构，提高特征提取能力
 - CBAM注意力机制 : 集成通道注意力和空间注意力，增强关键特征感知能力
 - ELU激活函数 : 缓解梯度消失问题，加速模型收敛
